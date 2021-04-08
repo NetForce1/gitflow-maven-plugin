@@ -1044,6 +1044,7 @@ public abstract class AbstractGitFlowMojo extends AbstractMojo {
                 args.add(VERSIONS_MAVEN_PLUGIN_SET_GOAL);
                 args.add(grp);
                 args.add(art);
+                args.add("-DprocessAllModules=true");
             }
 
             if (StringUtils.isNotBlank(versionProperty)) {
